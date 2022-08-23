@@ -1,0 +1,3 @@
+rootProject.name = 'SOAPModel'
+include 'User'
+

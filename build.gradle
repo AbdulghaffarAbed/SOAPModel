@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'edu.training'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+    implementation group: 'org.apache.maven.plugins', name: 'maven-compiler-plugin', version: '3.8.0'
+    implementation group: 'com.sun.xml.ws', name: 'rt', version: '4.0.0'
+
+}
+
+test {
+    useJUnitPlatform()
+}
